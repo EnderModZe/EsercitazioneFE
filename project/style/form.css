@@ -1,0 +1,7 @@
+body{
+    background-image: url("../images/background.gif") ;
+}
+
+label{
+    background-color: rgba(1, 0, 24, 0.39);
+}

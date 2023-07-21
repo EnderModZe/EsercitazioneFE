@@ -29,34 +29,34 @@
         </div>
       </nav>
       <div class="container">
-        <h1>Form Utente</h1>
+        <h1 class="text-light">Form Utente</h1>
         <form id="myForm" class="form-group">
 
-            <div class="row">
-            <label for="input_name">Contact name</label>
-            <input type="text" id="input_name"required>
+            <div class="row text-light">
+              <label for="input_name" class="col">Name</label>
+              <input type="text" id="input_name"required class="col-9">          
             </div>
             
-            <div class="row">   
-            <label for="input_surname">Contact surname</label>
-            <input type="text"id="input_surname"required >
+            <div class="row text-light">   
+              <label for="input_surname" class="col">Surname</label>
+              <input type="text"id="input_surname"required class="col-9">
             </div>
 
-            <div class="row">
-            <label for="input_email">Contact email</label>
-            <input type="email"id="input_email"required>
+            <div class="row text-light">
+                <label for="input_email" class="col">Email</label>
+                <input type="email"id="input_email"required class="col-9">
             </div>
 
-            <div class="row">
-            <label for="input_phone">Contact phone</label>
-            <input type="tela"id="input_phone"required>
+            <div class="row text-light">
+            <label for="input_phone" class="col">Phone</label>
+            <input type="tela"id="input_phone"required class="col-9">
              </div>
 
              <button class="btn btn-primary"id="submit">Submit</button>
 
         </form>
         
-        <h1>Utenti</h1>
+        <h1 class="text-light">Utenti</h1>
         <ol class="ordered_list list-group" id="users"></ol>
       </div>
 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/form.css">
+    <title>Form Utente</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Gestione Utenti</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login.html">Logout</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </nav>
+      <div class="container">
+        <h1>Form Utente</h1>
+        <form id="myForm" class="form-group">
+
+            <div class="row">
+            <label for="input_name">Contact name</label>
+            <input type="text" id="input_name"required>
+            </div>
+            
+            <div class="row">   
+            <label for="input_surname">Contact surname</label>
+            <input type="text"id="input_surname"required >
+            </div>
+
+            <div class="row">
+            <label for="input_email">Contact email</label>
+            <input type="email"id="input_email"required>
+            </div>
+
+            <div class="row">
+            <label for="input_phone">Contact phone</label>
+            <input type="tela"id="input_phone"required>
+             </div>
+
+             <button class="btn btn-primary"id="submit">Submit</button>
+
+        </form>
+        
+        <h1>Utenti</h1>
+        <ol class="ordered_list list-group" id="users"></ol>
+      </div>
+
+    <script src="../dist/form.js"></script>
+</body>
+</html>

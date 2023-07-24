@@ -98,10 +98,29 @@ function renderUsers(user: User[]): void {
        clearInput.reset();
     
     }
-    renderUsers(users.getUsers());
+    
+    let v: boolean = true;
+    function showUsers(){
+        let element = document.getElementById("users");
+        if(v){
+        renderUsers(users.getUsers());
+        v=false
+        }else{
+            if(element!=null)
+            element.innerHTML = "";
+
+            v=true;
+        }
+
+    }
+
     let formid = document.getElementById("myForm")
     if (formid != null) formid.addEventListener("submit", addUser)
 
     let search = document.getElementById("search");
     if(search!=null)
     search.addEventListener("input", users.filter);
+
+    let buttonUsers = document.getElementById("buttonUsers");
+    if(buttonUsers!=null)
+    buttonUsers.addEventListener("click", showUsers);
